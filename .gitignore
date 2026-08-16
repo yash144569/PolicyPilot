@@ -1,0 +1,24 @@
+# Secrets — never commit API keys
+.env
+*.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
+env/
+
+# Vector DB (large binary, regenerated from PDFs via ingestion.py)
+chroma_db/
+
+# Uploaded policy documents — often contain real PII (name, address,
+# policy number). Don't commit real customer/personal documents.
+docs/*
+!docs/.gitkeep
+
+# OS/editor junk
+.DS_Store
+.vscode/
+*.log
